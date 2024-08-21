@@ -1,10 +1,12 @@
+package ejercicio2LabInfraComp;
+
 public class Pastelero extends Thread {
 
-    private Pastel pastel;
+    private static Pastel pastel;
     
     
     public Pastelero(Pastel pastel){
-        this.pastel = pastel;
+    	Pastelero.pastel = pastel;
     }
 
     private void prepararPastel(){
@@ -13,6 +15,9 @@ public class Pastelero extends Thread {
             int randomNumber = 5 + (int) (Math.random() * (15 - 5 + 1));
             Thread.sleep(1000*randomNumber);
             System.out.println("Pastel listo con las caracteristicas:\n" + pastel.consultarDetallesPedido());
+            synchronized (pastel) {
+				pastel.notify();
+			}
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

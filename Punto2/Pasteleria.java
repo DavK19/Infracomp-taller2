@@ -1,7 +1,9 @@
+package ejercicio2LabInfraComp;
+
 public class Pasteleria {
     private Pastelero pastelero;
     private Cliente cliente;
-    private Pastel pastel;
+    private static Pastel pastel = new Pastel();
 
     public void iniciar(){
         pastelero = new Pastelero(pastel);

@@ -1,10 +1,11 @@
+package ejercicio2LabInfraComp;
+
 public class Pastel {
 
     private int alto = 0;
     private int radio = 0;
     private String sabor = "";
     private String color = "";
-
 
     public synchronized void hacerPedido(int alto, int radio, String sabor, String color){
         this.alto = alto;
