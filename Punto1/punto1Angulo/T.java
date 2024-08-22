@@ -25,7 +25,5 @@ public class T extends Thread{
         maxParcial.actualizarMaximo(max);
         System.out.println("El máximo parcial es: " + max);
     }
-
-
     
 }

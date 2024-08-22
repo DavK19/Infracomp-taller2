@@ -1,5 +1,3 @@
-package ejercicio2LabInfraComp;
-
 public class Pastelero extends Thread {
 
     private static Pastel pastel;

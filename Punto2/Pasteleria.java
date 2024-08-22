@@ -1,5 +1,3 @@
-package ejercicio2LabInfraComp;
-
 public class Pasteleria {
     private Pastelero pastelero;
     private Cliente cliente;

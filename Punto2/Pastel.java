@@ -1,5 +1,3 @@
-package ejercicio2LabInfraComp;
-
 public class Pastel {
 
     private int alto = 0;
